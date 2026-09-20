@@ -133,18 +133,6 @@ Für zukünftige Versionen, zum Beispiel V4.2.1:
 
 Die Konfiguration wird in **ESP32 Preferences/NVS** gespeichert. Bei einem normalen Firmwareupdate bleiben diese Einstellungen erhalten, solange die Firmware den NVS-Bereich nicht ausdrücklich löscht oder inkompatibel verändert.
 
-## Sicherheit
-
-WLAN-, MQTT-, OTA- oder andere Zugangsdaten dürfen **nicht in GitHub veröffentlicht** werden.
-
-- keine WLAN-Passwörter im Repository
-- keine MQTT-Passwörter im Repository
-- kein GitHub-Token in der Firmware
-- separates OTA-Passwort verwenden
-- Konfigurations-API gibt gespeicherte Passwörter nicht zurück
-
-Da das Repository öffentlich ist, kann die Updateprüfung ohne fest eingebauten GitHub-Token erfolgen.
-
 ## Projektstruktur
 
 ```text
