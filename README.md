@@ -86,6 +86,30 @@ Für einen einfachen Webserver-Test steht zur Verfügung:
 
 `http://<IP-DES-DISPLAYS>/health`
 
+## ioBroker → MQTT Bridge
+
+Für die Anbindung beliebiger ioBroker-Werte steht zusätzlich ein fertiges Bridge-Script zur Verfügung:
+
+`iobroker/iobroker-mqtt-bridge.js`
+
+Es exportiert automatisch alle State-Werte aus:
+
+- `0_userdata.*`
+- `goodwe_we.*`
+- `hm-rega.*`
+- `hm-rpc.*`
+
+Die Werte werden unter dem MQTT-Präfix `iobroker/` veröffentlicht. Beispiel:
+
+```text
+hm-rpc.0.ABC123.1.TEMPERATURE
+→ iobroker/hm-rpc/0/ABC123/1/TEMPERATURE
+```
+
+Beim Start werden alle vorhandenen Werte übertragen; danach wird jede Änderung automatisch gesendet. Standardmäßig werden die Nachrichten mit `retain = true` publiziert.
+
+Weitere Hinweise: [ioBroker MQTT Bridge](iobroker/README.md)
+
 ## Firmwareupdates über GitHub Releases
 
 Ab **V4.2.0** ist die Infrastruktur für GitHub-basierte Firmwareupdates vorgesehen.
@@ -143,6 +167,9 @@ Victron-ESP32-Display/
 ├── README.md
 ├── LICENSE
 ├── PROJECT.md
+├── iobroker/
+│   ├── iobroker-mqtt-bridge.js
+│   └── README.md
 └── firmware/
     ├── latest.json
     └── V4.2.0/
