@@ -1,6 +1,6 @@
 {
-  "version": "4.2.0",
-  "firmware_url": "",
-  "notes": "V4.2.0: Entwicklerangabe Ebner Stephan, GitHub-Projektstruktur und GitHub-Updateprüfung.",
+  "version": "4.2.3",
+  "firmware_url": "https://github.com/stephanflug/Victron-ESP32-Display/releases/download/4.2.3/Victron_Cerbo_Display_E32R28T_V4_3_3.ino.bin",
+  "notes": "V4.2.3: Aktueller GitHub-Release mit erweitertem MQTT-Support und aktueller Firmware.",
   "mandatory": false
 }
