@@ -20,6 +20,10 @@ Sechs konfigurierbare HOME-Kacheln, MQTT-Scanner, Zahlen-/Balken-/Sparkline-Dars
 ## Webinterface
 Konfiguration unter der IP-Adresse des ESP32. API-Endpunkte umfassen /api/config, /api/status und /api/save. /health dient der Diagnose. Firmware kann zusätzlich über den vorhandenen Web-OTA-Endpunkt hochgeladen werden.
 
+
+## ioBroker MQTT Bridge
+Optionales Zusatzscript unter `iobroker/iobroker-mqtt-bridge.js`. Es exportiert die State-Bereiche `0_userdata.*`, `goodwe_we.*`, `hm-rega.*` und `hm-rpc.*` auf den konfigurierten MQTT-Adapter. Beim Start werden bestehende Werte übertragen; danach werden Änderungen live mit MQTT-Retain publiziert. Die ioBroker-ID wird dabei unter dem Präfix `iobroker/` als MQTT-Pfad abgebildet.
+
 ## OTA
 Arduino OTA verwendet einen eigenen Hostnamen und optional ein eigenes OTA-Passwort. MQTT-Passwort wird nicht als OTA-Passwort verwendet.
 
