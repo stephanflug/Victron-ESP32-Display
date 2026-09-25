@@ -6,7 +6,7 @@ Ein lokales Touchdisplay für **Victron Cerbo GX** auf Basis des **ESP32 E32R28T
 [![License](https://img.shields.io/github/license/stephanflug/Victron-ESP32-Display)](LICENSE)
 
 **Entwickler:** Ebner Stephan  
-**Aktuelle Firmware:** V4.2.0  
+**Aktuelle Firmware:** V4.2.3  
 **Lizenz:** MIT
 
 ## Download
@@ -15,13 +15,13 @@ Für normale Anwender wird die jeweils veröffentlichte Version über **GitHub R
 
 **➡️ [Aktuelle Releases und Downloads](https://github.com/stephanflug/Victron-ESP32-Display/releases)**
 
-Für V4.2.0 steht das komplette Projekt als:
+Für V4.2.3 steht das aktuelle Release-Projekt als:
 
-`Victron_Cerbo_Display_E32R28T_V4_2_0.zip`
+`Victron_Cerbo_Display_E32R28T_V4_3_3.zip`
 
 im Release zur Verfügung.
 
-**➡️ [Release V4.2.0 öffnen](https://github.com/stephanflug/Victron-ESP32-Display/releases/tag/4.2.0)**
+**➡️ [Release V4.2.3 öffnen](https://github.com/stephanflug/Victron-ESP32-Display/releases/tag/4.2.3)**
 
 > Das ZIP enthält das komplette Projekt für Arduino IDE. Eine separat veröffentlichte `.bin` wird für direkte OTA-/GitHub-Firmwareupdates des ESP32 verwendet.
 
@@ -142,13 +142,13 @@ Ein Update wird **nicht ungefragt automatisch installiert**.
 
 ### Neue Version veröffentlichen
 
-Für zukünftige Versionen, zum Beispiel V4.2.1:
+Für zukünftige Versionen:
 
 1. GitHub → **Releases** → **Draft a new release**.
-2. Tag beispielsweise `4.2.1` anlegen.
-3. Release-Titel `V4.2.1` eintragen.
-4. Komplettes Projekt-ZIP hochladen, z. B. `Victron_Cerbo_Display_E32R28T_V4_2_1.zip`.
-5. Für ESP32-OTA zusätzlich die kompilierte Firmware hochladen, z. B. `Victron_Cerbo_Display_E32R28T_V4_2_1.bin`.
+2. Passenden Versions-Tag anlegen.
+3. Passenden Release-Titel eintragen.
+4. Komplettes Projekt-ZIP hochladen, z. B. `Victron_Cerbo_Display_E32R28T_<VERSION>.zip`.
+5. Für ESP32-OTA zusätzlich die kompilierte Firmware hochladen, z. B. `Victron_Cerbo_Display_E32R28T_<VERSION>.bin`.
 6. Änderungen der Version in den Release Notes beschreiben.
 7. **Publish release** auswählen.
 8. `firmware/latest.json` auf die neue Version und die neue BIN-Datei aktualisieren.
