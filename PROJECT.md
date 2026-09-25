@@ -1,7 +1,7 @@
 # Projektarchiv – Victron ESP32 Display
 
 ## Stand
-Version: **V4.2.0**  
+Version: **V4.2.3**  
 Entwickler: **Ebner Stephan**  
 Lizenz: **MIT**
 
@@ -27,7 +27,7 @@ Optionales Zusatzscript unter `iobroker/iobroker-mqtt-bridge.js`. Es exportiert 
 ## OTA
 Arduino OTA verwendet einen eigenen Hostnamen und optional ein eigenes OTA-Passwort. MQTT-Passwort wird nicht als OTA-Passwort verwendet.
 
-## GitHub Update V4.2.0
+## GitHub Update
 Repository: stephanflug/Victron-ESP32-Display. Die Firmware kann die öffentliche Manifestdatei firmware/latest.json prüfen. Eine höhere Version wird im Webinterface gemeldet. Die Installation erfolgt bewusst erst nach Anwenderaktion. Das Manifest verweist bei veröffentlichter OTA-Firmware auf eine kompilierte .bin.
 
 ## Sicherheit
